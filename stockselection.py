@@ -214,7 +214,7 @@ def get_prediction_dataset(rebalance_date, data):
     features = data.drop(['forward_return'], axis=1)
     return features
 
-#setting random forest optimizer
+#setting random forest optimizer with specified parameters.
 
 def optimize(rebalance_date, data, window):
     param_grid = {'n_estimators': [30, 40, 50],
